@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeedTSF</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <div class="fixed-top header ">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
         <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> -->
         <img class="bi me-2" width="50" height="50" src="./spark.png" alt="">
@@ -18,18 +19,19 @@
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="#About" class="nav-link px-2 link-dark">About</a></li>
+        <li><a href="#Contact" class="nav-link px-2 link-dark">Contact</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
         <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Donate</button>
+        <a type="button" class="btn btn-outline-primary me-2" href="https://rzp.io/l/BbBsgImJ">Donate</a>
       </div>
     </header>
     </div>
 
+    <div id="Home">
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
@@ -40,11 +42,59 @@
             <p class="lead">Welcome to <strong>Boundless Education</strong> , where education knows no boundaries. We believe in the power of knowledge to transform lives, which is why we're dedicated to providing free education to all, regardless of background or circumstance.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Know US</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Donate</button>
+              <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="https://rzp.io/l/BbBsgImJ">Donate</a>
             </div>
           </div>
         </div>
     </div>
-    
+    </div>
+
+    <div id="About" class="pt-4">
+    <div class="px-4 py-5 my-5 ">
+        <h1 class="display-5 fw-bold text-center mb-4">About Us</h1>
+        <div class="col-lg-8 mx-auto">
+          <p class="lead mb-4">"Our Free Education Charitable Trust" is a beacon of hope and opportunity for those who seek knowledge but face financial barriers. As an organization committed to the principle that education should be accessible to all, we tirelessly work to provide free education to individuals regardless of their background or circumstances.
+
+            Driven by the belief that education is the key to unlocking human potential, we strive to empower individuals to reach their fullest capabilities and contribute meaningfully to society. Through innovative programs, community outreach, and strategic partnerships, we aim to bridge the gap between aspiration and opportunity, ensuring that every individual has the chance to pursue their dreams and build a brighter future for themselves and their communities.
+            
+            At Our Free Education Charitable Trust, we believe that education is not just a privilege—it is a fundamental right. By donating to our cause, you join us in our mission to break down barriers, ignite minds, and inspire change. Together, we can create a world where access to education is universal, and every individual has the opportunity to thrive. Join us on this transformative journey as we strive to make education accessible to all.</p>
+        </div>
+    </div>
+    </div>
+
+    <div id="Contact" >
+    <div class="container col-xxl-8 px-4 py-5">
+        <h1 class="display-5 fw-bold text-center mb-4">Contact Form</h1>
+        <form id="contact_form" name="contact_form" method="post">
+            <div class="mb-5 row">
+                <div class="col">
+                    <label>First Name</label>
+                    <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+                </div>
+                <div class="col">
+                    <label>Last Name</label>
+                    <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+                </div>
+            </div>
+            <div class="mb-5 row">
+                <div class="col">
+                    <label for="email_addr">Email address</label>
+                    <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                        placeholder="name@example.com">
+                </div>
+                <div class="col">
+                    <label for="phone_input">Phone</label>
+                    <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                        placeholder="Phone">
+                </div>
+            </div>
+            <div class="mb-5">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-4 btn-lg">Post</button>
+        </form>
+    </div>
+    </div>
 </body>
 </html>
